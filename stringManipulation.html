@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string rverse
+    </title>
+</head>
+<body>
+    <label for="string">Type any string to be reversed</label>
+    <input type="text" id="string" placeholder="enter here">
+    <button onclick=makeReverse()>get reverse</button>
+    <p id="result"></p>
+    <script>
+        function makeReverse(stringEelement){
+        stringEelement = document.getElementById('string').value 
+        document.getElementById('result').innerHTML = [...stringEelement].reverse().join("")
+        }
+    </script>
+</body>
+</html>
